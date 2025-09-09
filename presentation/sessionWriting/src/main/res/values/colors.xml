@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="checked_color">@color/blue_500</color>
+    <color name="default_color">@color/zinc_400</color>
+</resources>

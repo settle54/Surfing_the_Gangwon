@@ -1,0 +1,18 @@
+<resources>
+    <string name="create_new_session">같이 타기 모집글 작성</string>
+    <string name="dater_and_time_of_session">모임 일시</string>
+    <string name="write_based_on_the_session_time">(집합시간을 기준으로 작성)</string>
+    <string name="direct_input">직접입력</string>
+    <string name="regions_and_beaches">지역 및 해변</string>
+    <string name="group_difficulty">그룹 난이도</string>
+    <string name="maximum_number_of_groups">그룹 최대 인원 수</string>
+    <string name="create_details_of_session_details">모집 상세 내용 작성</string>
+    <string name="please_fill_out_the_title_within_15_characters">15자 이내의 제목을 작성해주세요</string>
+    <string name="please_write_an_additional_description">추가 설명을 작성해주세요.\nex) 00 햄버거집 앞에서 만나요 !\n\n\n</string>
+    <string name="enter_phone_number">전화번호 입력 (선택)</string>
+    <string name="registration">등록하기</string>
+    <string name="date_hint">00년 00월 00일</string>
+    <string name="time_hint">오후 00시</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="session_time">집합시간</string>
+    <string name="number_of_participants">참여인원</string>
+    <string name="place_and_description">장소 및 설명</string>
+    <string name="session_reservation_instruction">예약하기 전, 해당 날짜가 맞는지 확인하세요!</string>
+    <string name="session_check_your_joined_information">참여 정보는 ‘MY’ 에서 확인할 수 있습니다</string>
+    <string name="session_check_your_invited_information">모집 정보는 ‘MY’ 에서 확인할 수 있습니다</string>
+    <string name="join">참여하기</string>
+    <string name="completed_session">모집완료</string>
+    <string name="cancel_join">참여취소</string>
+    <string name="cancel_invite">모집 취소하기</string>
+    <string name="completed_join">참여완료</string>
+    <string name="complete_invite">모집 완료하기</string>
+    <string name="complete_your_join">참여가 완료되었어요</string>
+</resources>

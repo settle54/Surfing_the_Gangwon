@@ -1,0 +1,21 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 바탕을 채우는 기본 배경 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/shadow"/>
+        </shape>
+    </item>
+
+    <!-- 둥근 하단 모서리의 오버레이 -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners
+                android:bottomLeftRadius="30dp"
+                android:bottomRightRadius="30dp"
+                android:topLeftRadius="0dp"
+                android:topRightRadius="0dp"/>
+        </shape>
+    </item>
+</layer-list>
+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/home_nav_graph"
         android:title="@string/home"
         android:icon="@drawable/icon_home"/>
     <item
@@ -9,7 +9,7 @@
         android:title="@string/guideline"
         android:icon="@drawable/icon_guideline"/>
     <item
-        android:id="@+id/together"
+        android:id="@+id/together_nav_graph"
         android:title="@string/together"
         android:icon="@drawable/icon_together"/>
     <item
@@ -17,7 +17,7 @@
         android:title="@string/notification"
         android:icon="@drawable/icon_notification"/>
     <item
-        android:id="@+id/my"
+        android:id="@+id/mypage_nav_graph"
         android:title="@string/my"
         android:icon="@drawable/icon_my"/>
 </menu>

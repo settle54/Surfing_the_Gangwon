@@ -1,0 +1,8 @@
+<resources>
+    <string name="created_sessions_status">모집 현황</string>
+    <string name="enable_created_session_articles">내가 작성한 \‘모집글\'을 볼 수 있어요</string>
+    <string name="reserved_sessions_status">예약 현황</string>
+    <string name="enable_reserved_session_articles">내가 예약한 \‘같이타기\’ 를 볼 수 있어요</string>
+    <string name="logout">로그아웃</string>
+    <string name="title_my">MY</string>
+</resources>
