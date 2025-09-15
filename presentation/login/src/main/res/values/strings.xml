@@ -1,0 +1,5 @@
+<resources>
+    <string name="login_by_kakao">카카오 로그인</string>
+    <string name="description">강원도 서퍼들을 위한\n해양 정보 &amp; 모임 앱</string>
+    <string name="during_login">로그인 중 입니다.</string>
+</resources>

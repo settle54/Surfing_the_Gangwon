@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mypage_nav_graph"
+    app:startDestination="@id/myPage">
+
+    <fragment
+        android:id="@+id/myPage"
+        android:name="com.capstone.surfingthegangwon.presentation.mypage.MyPageFragment">
+
+        <action
+            android:id="@+id/action_myPage_to_sessionStatus"
+            app:destination="@id/sessionStatus" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionStatus"
+        android:name="com.capstone.surfingthegangwon.presentation.sessionstatus.SessionStatusFragment">
+
+        <argument
+            android:name="status"
+            app:argType="string" />
+
+        <action
+            android:id="@+id/action_sessionStatuse_to_sessionReading"
+            app:destination="@id/sessionReading" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionReading"
+        android:name="com.capstone.surfingthegangwon.presentation.sessionReading.SessionReadingFragment">
+
+        <argument
+            android:name="session"
+            app:argType="com.capstone.surfingthegangwon.core.model.SessionItem" />
+    </fragment>
+
+</navigation>

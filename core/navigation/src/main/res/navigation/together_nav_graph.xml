@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/together_nav_graph"
+    app:startDestination="@id/together">
+
+    <fragment
+        android:id="@+id/together"
+        android:name="com.capstone.surfingthegangwon.presentation.together.TogetherFragment" >
+        <action
+            android:id="@+id/action_together_to_writing"
+            app:destination="@id/sessionWriting" />
+        <action
+            android:id="@+id/action_together_to_reading"
+            app:destination="@id/sessionReading" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sessionWriting"
+        android:name="com.capstone.surfingthegangwon.presentation.sessionwriting.SessionWritingFragment" />
+
+    <fragment
+        android:id="@+id/sessionReading"
+        android:name="com.capstone.surfingthegangwon.presentation.sessionReading.SessionReadingFragment" >
+
+        <argument
+            android:name="session"
+            app:argType="com.capstone.surfingthegangwon.core.model.SessionItem" />
+    </fragment>
+
+</navigation>

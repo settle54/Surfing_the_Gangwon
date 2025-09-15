@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_gray"
+    tools:context=".SessionReadingFragment">
+
+    <com.capstone.surfingthegangwon.core.ui.TopAppBar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/sessionWindow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_shadow_rounded_background"
+        android:orientation="vertical"
+        android:padding="25dp"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar">
+
+        <TextView
+            android:id="@+id/sessionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pretendard_semibold"
+            android:text="2025년 7월 20일"
+            android:textColor="@color/blue_500"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sessionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/pretendard_bold"
+            android:text="약한 파도로 함께 입문해봐요!"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bottom_shadow"
+        app:layout_constraintTop_toBottomOf="@id/sessionWindow" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="30dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="30dp"
+        app:layout_constraintTop_toBottomOf="@id/sessionWindow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/completeJoiningInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pretendard_medium"
+                android:text="@string/complete_your_join"
+                android:textColor="@color/zinc_500"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="양양"
+                    android:textColor="@color/blue_500"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/beach"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="@font/pretendard_semibold"
+                    android:text="죽도해변 A"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <com.capstone.surfingthegangwon.core.ui.GradeView
+                    android:id="@+id/grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sessionContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/session_background"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/sessionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:text="@string/session_time"
+                        android:textColor="@color/zinc_500"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/numberParticipants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:fontFamily="@font/pretendard_regular"
+                        android:text="@string/number_of_participants"
+                        android:textColor="@color/zinc_500"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toEndOf="@id/sessionTime"
+                        app:layout_constraintTop_toTopOf="@id/sessionTime" />
+
+                    <TextView
+                        android:id="@+id/sessionTimeDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendard_medium"
+                        android:text="14:00"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/sessionTime"
+                        app:layout_constraintTop_toBottomOf="@id/sessionTime" />
+
+                    <TextView
+                        android:id="@+id/numberParticipantsDetail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/pretendard_medium"
+                        android:text="3/5"
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp"
+                        app:layout_constraintStart_toStartOf="@id/numberParticipants"
+                        app:layout_constraintTop_toBottomOf="@id/numberParticipants" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/placeAndDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="@string/place_and_description"
+                    android:textColor="@color/zinc_500"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:text="어떤햄버거집 앞에있어요!\n초보자 분들만 받고있습니다 :) 강사 한 분 계세요!"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="105dp"
+                android:background="@drawable/session_background"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/phoneIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/phone_icon" />
+
+                <TextView
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:text="010 - 0000 - 0000"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 참여 미완료 -->
+            <LinearLayout
+                android:id="@+id/unjoinedWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/unjoined_instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_medium"
+                    android:gravity="center"
+                    android:text="@string/session_reservation_instruction"
+                    android:textColor="@color/zinc_300"
+                    android:textSize="15sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/joinButton"
+                    style="@style/Widget.Blue.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/join" />
+            </LinearLayout>
+
+            <!-- 모집글 모집 완료 -->
+            <LinearLayout
+                android:id="@+id/completedWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <!-- 참여글일 시 visiblity를 gone으로 -->
+                <TextView
+                    android:id="@+id/completedJoinInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:gravity="center"
+                    android:text="@string/session_check_your_invited_information"
+                    android:textColor="@color/zinc_500"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/completedButton"
+                    style="@style/Widget.Gray.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/completed_session" />
+            </LinearLayout>
+
+            <!-- 참여 완료 -->
+            <LinearLayout
+                android:id="@+id/joinedWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/joinedInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:gravity="center"
+                    android:text="@string/session_check_your_joined_information"
+                    android:textColor="@color/zinc_500"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancelJoinButton"
+                        style="@style/Widget.Gray.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="1.5"
+                        android:text="@string/cancel_join" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/completedJoin"
+                        style="@style/Widget.Stroke.Blue.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:text="@string/completed_join" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 모집글 상세 -->
+            <LinearLayout
+                android:id="@+id/invitedWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/invitedInstruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_regular"
+                    android:gravity="center"
+                    android:text="@string/session_check_your_invited_information"
+                    android:textColor="@color/zinc_500"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/cancelInviteButton"
+                        style="@style/Widget.Stroke.Blue.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/cancel_invite" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/completeInviteButton"
+                        style="@style/Widget.Stroke.Blue.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/complete_invite" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

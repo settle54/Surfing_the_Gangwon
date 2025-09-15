@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/titleSurfing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/exo_light"
+        android:text="Surfing"
+        android:textColor="@color/logo_start_color"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/titleThe"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide" />
+
+    <TextView
+        android:id="@+id/titleThe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/exo_light"
+        android:text="the"
+        android:textColor="@color/logo_start_color"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@id/titleGangwon"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide" />
+
+    <TextView
+        android:id="@+id/titleGangwon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/exo_light"
+        android:text="Gangwon"
+        android:textColor="@color/logo_end_color"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@id/horizontalGuide"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/verticalGuide"
+        app:layout_constraintTop_toTopOf="@id/titleSurfing"
+        app:srcCompat="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pretendard_light"
+        android:gravity="center"
+        android:letterSpacing="0.5"
+        android:lineSpacingMultiplier="1.5"
+        android:text="@string/description"
+        android:textColor="@color/zinc_500"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/verticalGuide"
+        app:layout_constraintTop_toBottomOf="@id/titleGangwon" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/verticalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/horizontalGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/kakaoLoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/rounded_kakao_login_background"
+        android:gravity="center"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="20dp"
+        android:text="@string/login_by_kakao"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        app:drawableStartCompat="@drawable/kakao_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="sub_title" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+        <item name="android:layout_marginBottom">7dp</item>
+    </style>
+
+    <style name="drawable_tv" parent="Widget.AppCompat.TextView">
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginEnd">15dp</item>
+        <item name="android:fontFamily">@font/pretendard_light</item>
+        <item name="android:textColor">@drawable/black_to_blue_text_selector</item>
+        <item name="android:background">@drawable/gray_to_blue_button_selector</item>
+    </style>
+
+    <style name="edit_hint" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/zinc_400</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+    </style>
+
+    <style name="rcv_tv" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@drawable/gray_to_blue_text_selector</item>
+        <item name="android:background">@drawable/gray_to_blue_button_selector</item>
+        <item name="android:fontFamily">@font/pretendard_light</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="radio_button" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/gray_to_blue_text_radio_selector</item>
+        <item name="android:background">@drawable/gray_to_blue_radio_button_selector</item>
+        <item name="android:fontFamily">@font/pretendard_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="grade_radio_button" parent="Widget.Material3.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/pretendard_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableStart">@drawable/grade_icon</item>
+    </style>
+
+    <style name="phone_editTv" parent="Widget.AppCompat.EditText">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+    </style>
+</resources>

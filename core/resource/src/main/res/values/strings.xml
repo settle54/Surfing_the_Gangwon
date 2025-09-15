@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="yangyang">양양</string>
+    <string name="goseong">고성</string>
+    <string name="sokcho">속초</string>
+    <string name="gangneung">강릉</string>
+    <string name="grade_beginner">초급</string>
+    <string name="grade_intermediate">중급</string>
+    <string name="grade_advanced">고급</string>
+</resources>
